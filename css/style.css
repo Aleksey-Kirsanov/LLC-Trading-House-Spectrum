@@ -1,0 +1,443 @@
+/* -----------------------null---------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* -----------------------------------header---------------------------- */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.logo{
+    background-color: rgb(23, 17, 26);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.graficlogo{
+    padding: 3px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+nav{
+    margin: auto;
+    padding-left: 20%;
+    width: 800px;
+    height: 50px;
+}
+.topnav{
+    background-color: white;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.topnav a{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+.topnav a:hover{
+    border-bottom: 5px solid rgb(23, 17, 26);
+}
+.topnav .icon{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon{
+        float:right;
+        margin-top: -17px;
+        display: block;
+        color: black;
+    }
+    nav{
+        padding-left: 0;
+        width: 100%;
+        height: 40px;
+    }
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;  
+    }
+    .topnav.topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #myTopnav.topnav{
+        margin-top: 15px;
+    }
+    #myTopnav.topnav a{
+        padding: 10px 20px 10px 20px;
+    }
+ }
+ /* ---------------------------------------main------------------------- */
+ .mw-100{
+    max-width: 70rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 70px;
+}
+.tekst-1{
+    text-align: center;
+    margin-top: 15px;
+}
+h2{
+    font-size: 17px;
+}
+.text_h2_pr{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.iamge_main{
+    max-width: 40%;
+    padding: 10px 0 0 0;
+}
+ .advantages_conteiner{
+    display: flex;
+    justify-content: center;
+ }
+.advantages{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.advantages_item{
+    width: 25%;
+    margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 768px){
+    .advantages_item{
+        width: 35%;
+    }
+    h2{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 420px){
+    .advantages{
+    flex-direction: column;
+    }
+    .advantages_item{
+        width: 100%;
+    }
+}
+/* -------------------produkts------------------- */
+.gallary{
+   width: 90%;
+   margin: auto; 
+   display: flex;
+   text-align: center;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.foto-itm{
+    max-width: 25%;
+}
+.foto-itm img{
+    box-sizing: border-box;
+    max-width: 100%;
+    opacity: 0.7;
+}
+.foto-itm img:hover{
+    opacity: 1;
+}
+.foto-itm img{
+    padding: 10px 10px 15px 10px;
+    height: 200px;
+    width: auto;
+}
+.product{
+    display: block;
+    margin: auto;
+}
+.text_pr{
+    text-align: center;
+}
+.h1_prod{
+    text-align: center;
+}
+.p_prod{
+    padding: 0 5px 0 5px;
+}
+.blog-cover1{
+    max-height: 240px;
+}
+.blog-cover2{
+    max-height: 240px;
+}
+.blog-cover3{
+    max-height: 240px;
+}
+.blog-cover4{
+    max-height: 240px;
+}
+
+@media screen and (max-width: 768px){
+    .foto-itm{
+       max-width: 45%;
+       margin-left: 10px;
+    }
+    .foto-itm img{
+        opacity: 1;
+    }
+    .blog-cover1{
+        max-height: 240px;
+    }
+    .blog-cover2{
+        max-height: 240px;
+    }
+    .blog-cover3{
+        max-height: 240px;
+    }
+    .blog-cover4{
+        max-height: 240px;
+    }
+}
+@media screen and (max-width: 420px){
+    .foto-itm{
+        max-width: 90%;
+        margin-left: 10px;
+    }
+    .foto-itm img{
+        opacity: 1;
+    }
+    .gallary{
+        width: auto;
+        margin: auto;
+    }
+    .foto-itm{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .blog-cover1{
+        max-height: 240px;
+    }
+    .blog-cover2{
+        max-height: 240px;
+    }
+    .blog-cover3{
+        max-height: 240px;
+    }
+    .blog-cover4{
+        max-height: 240px;
+    }
+
+}
+/* -----------------------map------------------- */
+.blog-container{
+    background-color: rgba(230, 230, 230, 0.601);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .2) 0 4px 2px -2px;
+    font-weight: 100;
+    margin: 48px auto;
+    width: 50rem;
+}
+.blog-cover1{
+    background: url(../img/img_cr1.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 15rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.blog-cover2{
+    background: url(../img/img_cr2.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 25rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.blog-cover3{
+    background: url(../img/img_cr3.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 25rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.blog-cover4{
+    background: url(../img/img_cr4.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 25rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.blog-body{
+    margin: 10px auto;
+    width: 80%;
+}
+.blog-title h1{
+    color: rgb(23, 17, 26);
+    font-weight: 100;
+}
+.blog-text p{
+    color: rgb(58, 43, 65);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .blog-container{
+        width: 28rem;
+    }
+    h2.text_h2_map{
+        margin: 10px 0 10px;
+    }
+    h2.text_h2_pr{
+        margin: 10px 0 10px;
+    }
+    h2.cont_h2{
+        margin: 10px 0 10px;
+    }
+}
+@media screen and (max-width: 420px){
+    .blog-container{
+        width: 20rem;
+    }
+    h2.text_h2_map{
+        margin: 10px 0 10px;
+    }
+    h2.text_h2_pr{
+        margin-top: 10px;
+    }
+    h2.cont_h2{
+        margin: 10px 0 10px;
+    }
+  
+}
+
+/*  ---------------------map part-------------= */
+.map_part{
+    max-width: 40rem;
+    padding: 5px 10px 30px 10px;
+    margin: auto;
+}
+.text_h2_map{
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+.table_map td, th{
+    border: 2px solid black;
+    padding: 5px;
+}
+/* ----------------contacts------------- */
+.cont_main{
+    max-width: 40rem;
+    padding: 5px 10px 30px 10px;
+    margin: auto;
+}
+.cont_h2{
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+.conts{
+    background-color: rgb(58, 43, 65);
+    display: block;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.cont_icn{
+    max-width: 50px;
+    display: inline;
+    margin-bottom: 10px;
+}
+/* ---------------------cars-------------------- */
+
+.img_car1{
+    background: url(../img/img_car1.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 25rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.img_car2{
+    background: url(../img/img_car2.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 25rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.img_car3{
+    background: url(../img/img_car3.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 30rem;
+    box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+.h1_car{
+    text-align: center;
+}
+.p_car{
+    text-align: left;
+}
+@media screen and (max-width: 768px){
+    .img_car1{
+        height: 17rem;
+    }
+    .img_car2{
+        height: 17rem;
+    }
+    .img_car3{
+        height: 22rem;
+    }
+    .h1_car{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 420px){
+    .img_car1{
+        height: 11rem;
+    }
+    .img_car2{
+        height: 11rem;
+    }
+    .img_car3{
+        height: 13rem;
+    }
+    .h1_car{
+        font-size: 14px;
+    }
+    .p_car{
+        font-size: 12px;
+    }
+}
+/* ---------------------- */
+.main_text{
+    margin: auto;
+    max-width: 80%;
+    padding: 20px 0 20px 0;
+}
+.main_text_h2{
+    text-align: center;
+}
+#text2{
+    padding-bottom: 50px;
+}
+.main_text ul li{
+    padding-left: 20px;
+    list-style: square;
+}
